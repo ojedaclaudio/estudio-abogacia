@@ -1,0 +1,82 @@
+/* RESETS PROPIOS */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+footer{
+    width: 100%;
+}
+/* RESETS PROPIOS */
+
+.lista-propia{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+.bg-color-propio{
+    background-color: #00182E;
+}
+.enlace-propio{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.enlace-propio:hover{
+    color: rgb(205, 218, 247);
+    font-size: 110%;
+}
+.bg-main-propio{
+    background-color: whitesmoke;
+}
+
+.p-main{
+    max-height: 100%;
+    padding: 0 1% 0 10%;
+}
+.aside-propia{
+    right: 0;
+    height: 100%;
+}
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:19.5%;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+.whatsapp-icon {
+    margin-top:13px;
+}
+.border-mio{
+    height: 105%;
+    border-style: none;
+}
+#iframe-maps{
+    display: none;
+}
+
+/* MEDIAS QUERIES */
+@media (max-width: 1199px){
+    .h1-index{
+        text-align: center;
+    }
+}
+@media (min-width: 992px) {
+     #iframe-maps{
+         display: block;
+     }
+     iframe{
+         width: 100%;
+         height: 80%;
+     }
+}
