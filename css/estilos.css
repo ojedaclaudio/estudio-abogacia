@@ -5,10 +5,12 @@ body{
     width: 100%;
     height: 100vh;
     background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
 footer{
     width: 100%;
 }
+
 iframe{
     width: 100%;
     height: 90%;
@@ -42,30 +44,60 @@ iframe{
     color: rgb(205, 218, 247);
     font-size: 110%;
 }
+#footer-copy{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.a-footer{
+    text-decoration: none;
+    color: white;
+}
 /* CSS EN MENU, MAIN Y FOOTER */
-/* INDEX */
-#fondo-index{
+/* BANNER */
+#fondo-banner{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 200px;
-    background-image: url(../assets/img/fondo_index.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#cover-index{
+#cover-banner{
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #f5f5f500, #f5f5f5);
+    background-image: linear-gradient(to bottom, #f5f5f500, #f5f5f5 100%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+.h1-banner{
+    font-style: italic;
+    background-image: linear-gradient(to top, #f5f5f500, #f5f5f571);
+}
+/* BANNER */
+/* INDEX */
+.fondo-index{
+    background-image: url(../assets/img/fondo_index.jpg);
 }
 /* INDEX */
 /* NOSOTROS */
-.border-imagen{ 
-    border-left: 11px solid #00182E;
-    border-radius: 37px 0px 0px 0px;
+.fondo-nosotros{
+    background-image: url(../assets/img/fondo-nosotros.jpg);
 }
 /* NOSOTROS */
+/* AREAS */
+.fondo-areas{
+    background-image: url(../assets/img/fondo-areas.jpg); 
+}
+/* AREAS */
 /* CONTACTO */
 .border-mio{ /* BORDES DE LOS INPUT */
     height: 105%;
@@ -74,14 +106,17 @@ iframe{
 #aside-info{ 
     display: none;
 }
+.fondo-contacto{
+    background-image: url(../assets/img/fondo-contacto.jpg); 
+}
 /* CONTACTO */
 /* ICON WPP FLOTANTE */
 .whatsapp {
     position:fixed;
     width:60px;
     height:60px;
-    bottom:19.5%;
-    right:40px;
+    bottom:13%;
+    right:10px;
     background-color:#25d366;
     color:#FFF;
     border-radius:50px;
@@ -94,6 +129,11 @@ iframe{
     margin-top:13px;
 }
 /* ICON WPP FLOTANTE */
+/* CARROUSEL */
+.border-crr{
+    border: 1px solid black;
+}
+/* CARROUSEL */
 
 
 /* MEDIAS QUERIES */
@@ -101,6 +141,7 @@ iframe{
     .h1-index{
         text-align: center;
     }
+    
 }
 @media (min-width: 768px) {
      #aside-info{
@@ -117,6 +158,9 @@ iframe{
     .p-areas{
         text-align: end;
     }
+    .border-imagen-r{ 
+        transform: scale(-1, 1);
+    }
 }
 @media (max-width:576px) {
     #art2-nosotros, #art1-nosotros{
@@ -126,28 +170,22 @@ iframe{
     .p-nosotros-md{
         text-align: center;
     }
+    .border-imagen{ 
+        border-top: 11px solid #00182E;
+        border-radius: 37px 37px 0px 0px;
+    }
+    .border-imagen-r{ 
+        border-top: 11px solid #00182E;
+        border-radius: 37px 37px 0px 0px;
+    }
 }
-
-.stars {
-    background-color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    animation-iteration-count: infinite;
-    animation-name: twinkle-1;
-    animation-duration: 1s;
-  }
-
-  @keyframes twinkle-1 {
-    50% {
-      transform: scale(0.5);
-      opacity: 0.5;
+@media (min-width:577px){
+    .border-imagen{ 
+        border-left: 11px solid #00182E;
+        border-radius: 37px 0px 0px 0px;
     }
-  }
-
-  @keyframes twinkle-2 {
-    20% {
-      transform: scale(0.5);
-      opacity: 0.5;
+    .border-imagen-r{ 
+        border-left: 11px solid #00182E;
+        border-radius: 37px 0px 0px 0px;
     }
-  }
+}

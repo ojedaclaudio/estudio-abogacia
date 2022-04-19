@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="../css/bootstrap.css">
   <!-- CSS PROPIO -->
   <link rel="stylesheet" href="../css/estilos.css">
+  <!-- ANIMATED -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- WPP ICON -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- FAVICON --> 
@@ -16,7 +22,7 @@
   <title>Contacto | Estudio Juridico</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <header>
+  <header class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-color-propio">
       <div class="container-fluid bg-color-propio">
         <a class="navbar-brand" href="../index.html"><img src="../assets/icons/logo3.png" alt="logo" width="120"></a>
@@ -43,12 +49,15 @@
     </nav>
   </header>
   <main>
+      <div id="fondo-banner" class="fondo-contacto"><div id="cover-banner"></div>
+      </div>
       <section class="container-fluid p-sections my-5">
         <div class="row row-cols-1 row-cols-md-2 mt-5">
           <div class="col col-lg-12 col-md-10">
             <h1 class="text-center">CONTACTANOS!</h1>
             <h2 class="text-center">COMPLETE CON SU INFORMACION</h2>
           </div>
+          <!-- FORMULARIO DE CONTACTO -->
           <form action="rutaalarchivo" class="row col col-lg-12 col-md-12 md-10 g-3 mb-5">
             <div class="col-md-6">
               <label for="nombre" class="form-label"></label>
@@ -77,12 +86,14 @@
               <button type="reset" class="btn btn-danger">Reiniciar Datos</button>
             </div>
           </form>
+          <!-- IFRAME DE MAPS -->
           <div id="iframe-maps" class="col-lg-10 col-md-10 mt-0">
             <h1 class="text-center">VISITA NUESTRO ESTUDIO</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.1866494346436!2d-67.96255198391776!3d-46.80062910698335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde8a362ff8d7075%3A0xfd2b45f5fba9b243!2sMitre%20637%2C%20Pico%20Truncado%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1647297272730!5m2!1ses-419!2sar"loading="lazy">
             </iframe>
           </div>
-          <div class="col col-md-2 contanier mt-5 col-lg-2 col-md-2" id="aside-info">
+          <!-- ASIDE DE CONTACTO -->
+          <aside class="col col-md-2 contanier mt-5 col-lg-2 col-md-2" id="aside-info">
             <div class="row row-cols-1">
               <div class="col text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -100,7 +111,7 @@
                 </svg>
               </div>
               <div class="col text-center">
-                <p class="mb-0">Numero de Telefono</p>
+                <p class="mb-0">+542975396981</p>
                 <p class="mt-0">Numero de Telefono</p>
               </div>
             </div>
@@ -112,24 +123,26 @@
                   </svg>
                 </div>
                 <div class="col text-center">
-                  <p class="mb-0">Correo Electronico</p>
+                  <p class="mb-0">ojeda_asoc@hotmail.com</p>
                   <p>Correo Electronico</p>
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
-  <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      <aside>
+        <a href="https://wa.me/542975396981?text=Me%20gustaría%20hacerles%20una%20consulta" class="whatsapp animate__animated animate__heartBeat animate__delay-2s animate__slow animate__infinite" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      </aside>
   </main>
-  <footer class="bg-color-propio py-3 px-3 mt-auto">
-    <div class="justify-content-between d-flex flex-wrap align-items-center">
+  <footer class="">
+    <div class="justify-content-between d-flex flex-wrap align-items-center bg-color-propio py-1 px-3 mt-auto">
       <div>
         <ul class="lista-propia">
-          <li>Dirreccion</li>
-          <li>Numero de contacto 1</li>
+          <li>Mitre 637, Pico Truncado, Santa Cruz, Argentina</li>
+          <li>Ojeda F. +542975396981</li>
           <li>Numero de contacto 2</li>
-          <li>Email</li>
+          <li>E-mail: ojeda_asoc@hotmail.com</li>
         </ul>
       </div>
       <div class="mt-2"> 
@@ -139,17 +152,20 @@
         <a class="enlace-propio" href="contacto.html">CONTACTO</a>
       </div>
       <div class="mt-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+        <a target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        </svg></a>
+        <a target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
           <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-map-fill" viewBox="0 0 16 16">
+        </svg></a>
+        <a target="_blank" href="https://goo.gl/maps/wYwGjE9ALLDWS5n29"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-map-fill" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
-        </svg>
+        </svg></a>
       </div>
     </div>
+    <div id="footer-copy"><p class="m-0 text-center">Copyright © 2022 <a class="a-footer" target="_blank" href="https://github.com/ojedaclaudio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </svg>/ojedaclaudio </a> – Todos los derechos reservados</p></div>
   </footer>
   <script src="../js/bootstrap.js"></script>
 </body>
