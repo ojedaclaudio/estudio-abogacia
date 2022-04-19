@@ -97,6 +97,10 @@ iframe{
 .fondo-areas{
     background-image: url(../assets/img/fondo-areas.jpg); 
 }
+.a-areas{
+    text-decoration: none;
+    color: black;
+}
 /* AREAS */
 /* CONTACTO */
 .border-mio{ /* BORDES DE LOS INPUT */
