@@ -1,0 +1,41 @@
+@import "colores";
+
+footer{
+    div{
+        div{
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                color: $color-fondo;
+            }
+        }
+        div{
+            a{
+                text-decoration: none;
+                color: $color-fondo;
+                &:hover{
+                    color: rgb(205, 218, 247);
+                    font-size: 110%;
+                }
+            }
+        }
+    }
+    #footer-copy{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        a{
+            text-decoration: none;
+            color: $color-fondo;
+            &:hover{
+                color:deeppink;
+            }
+        }
+    }
+}

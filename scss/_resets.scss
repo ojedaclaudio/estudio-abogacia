@@ -1,0 +1,20 @@
+@import "colores";
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-fondo;
+    font-family: 'Raleway', sans-serif;
+}
+footer{
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+}
+main{
+    background-color: $color-fondo;
+}

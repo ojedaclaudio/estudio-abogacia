@@ -1,0 +1,38 @@
+@import "colores";
+
+#fondo-banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        h1{
+            font-style: italic;
+            background-image: linear-gradient(to top, #f5f5f500, #f5f5f571)
+        }
+        div{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #f5f5f500, $color-fondo 100%);
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            text-align: center;
+        }
+}
+/* FONDOS DEL BANNER DE CADA PAGINA */
+.fondo-index{
+    background-image: url(../assets/img/fondo_index.jpg);
+}
+.fondo-nosotros{
+    background-image: url(../assets/img/fondo-nosotros.jpg);
+}
+.fondo-areas{
+    background-image: url(../assets/img/fondo-areas.jpg); 
+}
+.fondo-contacto{
+    background-image: url(../assets/img/fondo-contacto.jpg); 
+}
+/* FONDOS DEL BANNER DE CADA PAGINA */

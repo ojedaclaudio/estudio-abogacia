@@ -1,0 +1,48 @@
+@import "colores";
+
+/* AREAS */
+.a-areas{
+    text-decoration: none;
+    color: black;
+}
+/* AREAS */
+/* CONTACTO */
+.border-mio{ /* BORDES DE LOS INPUT */
+    height: 105%;
+    border-style: none;
+}
+#aside-info{ 
+    display: none;
+}
+/* CONTACTO */
+/* ICON WPP FLOTANTE */
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:13%;
+    right:10px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+.whatsapp-icon {
+    margin-top:13px;
+}
+/* ICON WPP FLOTANTE */
+/* CARROUSEL */
+.border-crr{
+    border: 1px solid black;
+}
+/* CARROUSEL */
+.p-main{
+    max-height: 100%;
+    padding: 0 5%;
+}
+.p-sections{
+    padding: 0 5%;
+}
