@@ -23,16 +23,23 @@
         }
 }
 /* FONDOS DEL BANNER DE CADA PAGINA */
-.fondo-index{
-    background-image: url(../assets/img/fondo_index.jpg);
+
+//.fondo-index{
+//    background-image: url(../assets/img/fondo_index.jpg);
+//}
+//.fondo-nosotros{
+//    background-image: url(../assets/img/fondo-nosotros.jpg);
+//}
+//.fondo-areas{
+//    background-image: url(../assets/img/fondo-areas.jpg); 
+//}
+//.fondo-contacto{
+//    background-image: url(../assets/img/fondo-contacto.jpg); 
+//}
+@each $banner in index, nosotros, areas, contacto {
+    .fondo-#{$banner} {
+        background-image: url(../assets/img/fondo-#{$banner}.jpg);
+    }
 }
-.fondo-nosotros{
-    background-image: url(../assets/img/fondo-nosotros.jpg);
-}
-.fondo-areas{
-    background-image: url(../assets/img/fondo-areas.jpg); 
-}
-.fondo-contacto{
-    background-image: url(../assets/img/fondo-contacto.jpg); 
-}
+
 /* FONDOS DEL BANNER DE CADA PAGINA */
