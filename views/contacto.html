@@ -66,7 +66,7 @@
             <h2 class="text-center">COMPLETE CON SU INFORMACION</h2>
           </div>
           <!-- FORMULARIO DE CONTACTO -->
-          <form action="rutaalarchivo" class="row col col-lg-12 col-md-12 md-10 g-3 mb-5">
+          <form action="formulario.php" method="post" class="row col col-lg-12 col-md-12 md-10 g-3 mb-5">
             <div class="col-md-6">
               <label for="nombre" class="form-label"></label>
               <input type="text" id="nombre" class="form-control border-mio" placeholder="NOMBRE COMPLETO" required>
@@ -85,10 +85,11 @@
             </div>
             <div class="col-md-12">
               <label for="comentarios" class="form-label"></label>
-              <textarea class="form-control" name="" id="comentarios" placeholder="COMENTENOS SU CASO.." rows="5"></textarea>
+              <textarea class="form-control" id="comentarios" placeholder="COMENTENOS SU CASO.." rows="5" required></textarea>
             </div>
+            <!-- BOTONES -->
             <div class="d-grid gap-2 col-md-6">
-              <button type="submit" class="btn btn-success">Enviar consulta</button>
+              <button type="submit" id="enviar" class="btn btn-success">Enviar consulta</button>
             </div>
             <div class="d-grid gap-2 col-md-6">
               <button type="reset" class="btn btn-danger">Reiniciar Datos</button>
