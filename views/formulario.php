@@ -14,6 +14,7 @@ $mensaje .= "$comentarios";
 
 mail("ojedaclaudio94@gmail.com", "Contacto desde pagina Web", $mensaje);
 
-header('Location:contacto.html')
+
+header('Location:formulario-enviado.html')
 
 ?>
