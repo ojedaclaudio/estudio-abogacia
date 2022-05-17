@@ -53,3 +53,31 @@
 .p-sections{
     padding: 0 5%;
 }
+/* FORM ENVIADO */
+.form-enviado{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-enviado{
+    color: whitesmoke;
+   text-align: center;
+   border: 3px solid $color-main;
+   border-radius: 40px;
+   padding: 5%;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.bgc-body{
+    background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.a-form{
+    color: #a8eb12;
+    font-size: 3em;
+    &:hover{
+        color: black;
+    }
+
+}
+/* FORM ENVIADO */
