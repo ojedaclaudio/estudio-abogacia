@@ -219,6 +219,10 @@ footer #footer-copy a:hover {
     border-top: 11px solid #00182E;
     border-radius: 37px 37px 0px 0px;
   }
+
+  .index-art {
+    display: block;
+  }
 }
 @media (min-width: 577px) {
   .border-imagen {
@@ -255,6 +259,25 @@ footer #footer-copy a:hover {
 
   .border-imagen-r {
     transform: scale(-1, 1);
+  }
+
+  .index-art {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+  }
+
+  .img-index {
+    margin-left: 5%;
+  }
+
+  .p-index {
+    max-width: 65%;
+  }
+
+  .fondo-art {
+    background-color: rgba(169, 169, 169, 0.849);
+    height: 70%;
   }
 }
 /* MEDIAS QUERIES */
