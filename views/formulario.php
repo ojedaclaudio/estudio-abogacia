@@ -12,7 +12,7 @@ $mensaje .= "Asunto: \n";
 $mensaje .= "$comentarios";
 
 
-mail("ojedaclaudio94@gmail.com", "Contacto desde pagina Web", $mensaje);
+mail("ojeda_asoc@hotmail.com", "Contacto desde pagina Web", $mensaje);
 
 
 header('Location:formulario-enviado.html')
